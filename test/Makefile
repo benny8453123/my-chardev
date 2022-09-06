@@ -1,5 +1,5 @@
 CC=gcc
-#DFLAG=-DUSE_KFIFO
+DFLAG=-DUSE_KFIFO
 OUTPUT_NAME=test
 
 all:

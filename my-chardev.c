@@ -81,7 +81,7 @@ static ssize_t my_chardev_read(struct file *file, char __user *buf, size_t lbuf,
 
 	my_chardev_info("%s: actual_read_count = %d, ppos = %lld\n", __func__, actual_read_count, *ppos);
 
-	return 0;
+	return actual_read_count;
 }
 
 static ssize_t my_chardev_write(struct file *file, const char __user *buf, size_t count, loff_t *ppos)
